@@ -1,23 +1,68 @@
 aid: apreciapharmaceuticals
+
 name: Apreciapharmaceuticals
-description: 'Apreciapharmaceuticals is a company surfaced via the API Evangelist harvest backlog (source:
-  secondary-market) and added to the network as a stub for full-pipeline profiling.'
+
+image: https://aprecia.com/wp-content/uploads/2025/02/Aprecia-Logo-RGB_Horizontal-Full_Color.png
+
+description: 'Apreciapharmaceuticals, operating as Aprecia Pharmaceuticals, is a pioneering specialty CDMO focused on 3D‑printed drug manufacturing. Founded in 2003 and based in Langhorne, PA, the company offers end‑to‑end development, clinical‑trial supply, and commercial‑scale production using FDA‑registered cGMP facilities. It is the world’s first to secure regulatory approval for a 3D‑printed medication (SPRITAM®) and continues to innovate in precision formulation, rapid prototyping, and flexible manufacturing to accelerate patient‑centered drug development.'
+
 url: https://raw.githubusercontent.com/api-evangelist/apreciapharmaceuticals/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-25 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-25'
+
 modified: '2026-09-25'
+
 tags:
 - Company
-apis: []
+- Pharmaceuticals
+- 3DPrinting
+- CDMO
+- FDA
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/apreciapharmaceuticals-hosts.yml
+- type: TermsOfService
+  url: https://aprecia.com/terms-and-conditions/
+- type: PrivacyPolicy
+  url: https://aprecia.com/privacy-policy
+- type: Newsroom
+  url: https://aprecia.com/resources/news/tradeshow-flyer/
+- type: Leadership
+  url: https://aprecia.com/team/
+- type: DomainSecurity
+  url: security/apreciapharmaceuticals-domain-security.yml
 - type: Website
-  url: https://equityzen.com/company/apreciapharmaceuticals
+  url: https://aprecia.com
+
+apis: []
+
+x-coverage:
+  state: unreadable
+  reason: no-machine-readable-spec
+  detail: No OpenAPI, AsyncAPI, GraphQL, or other machine‑readable contract was found on the provider's hosts.
+  evidence:
+    - url: https://api.aprecia.com/openapi.json
+      status: 000
+  checked: 2026-09-25
+x-enrichment:
+  date: '2026-09-25'
+  status: enriched
+  artifacts_added: 5
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local
